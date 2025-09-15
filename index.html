@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Someone 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div class="page active" id="landing">
+            <div class="hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            <h1 class="main-title">A Special Surprise</h1>
+            <p class="subtitle">Click anywhere to begin this journey of love...</p>
+            <div class="click-hint">💕 Click Me 💕</div>
+        </div>
+
+        <!-- Message Page -->
+        <div class="page" id="message">
+            <div class="message-container">
+                <h2 class="message-title">For the one who will one day enter my life<br>and share my dreams with me.</h2>
+                <div class="message-content">
+                    <p class="message-text">
+                        You light up my world in ways I never thought possible. 
+                        Every day with you feels like a beautiful dream that I never want to wake up from.
+                    </p>
+                    <p class="message-text">
+                        Your smile is my favorite thing in the world, and your laugh is the melody that plays in my heart.
+                    </p>
+                    <p class="message-text">
+                        I am love you more than words can express, and I'm so grateful to have you in my life.
+                    </p>
+                </div>
+                <button class="next-btn" onclick="showPhotos()">See More 💕</button>
+            </div>
+        </div>
+
+        <!-- Photos Page -->
+        <div class="page" id="photos">
+            <h2 class="photos-title">Our Beautiful Memories</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="p1.jpeg" alt="Beautiful Memory 1" class="photo">
+                    <p class="photo-caption">Cute + classy look 💕</p>
+                </div>
+                <div class="photo-item">
+                    <img src="p2.jpeg" alt="Beautiful Memory 2" class="photo">
+                    <p class="photo-caption">Special Moment ✨</p>
+                </div>
+                <div class="photo-item">
+                    <img src="p3.jpeg" alt="Beautiful Memory 3" class="photo">
+                    <p class="photo-caption">Together Forever 🌟</p>
+                </div>
+            </div>
+            <button class="next-btn" onclick="showSurprise()">Final Surprise 🎁</button>
+        </div>
+
+        <!-- Final Surprise -->
+        <div class="page" id="surprise">
+            <div class="surprise-container">
+                <h2 class="surprise-title">The Biggest Surprise</h2>
+                <div class="gift-box">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body"></div>
+                </div>
+                <p class="surprise-text">Click the gift box to open your surprise!</p>
+                <div class="surprise-message" id="surpriseMessage" style="display: none;">
+                    <h3>🎉 Surprise! 🎉</h3>
+                    <p id="dailyShayari">Loading shayari...</p>
+                    <p class="love-note" id="countdownDisplay">✨ 29 DAYS TO GO ✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="music.mp4" type="audio/mp4">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
