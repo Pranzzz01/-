@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Someone 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div class="page active" id="landing">
+            <div class="hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            <h1 class="main-title">A Special Surprise</h1>
+            <p class="subtitle">Click anywhere to begin this journey of love...</p>
+            <div class="click-hint">💕 Click Me 💕</div>
+        </div>
+
+        <!-- Message Page -->
+        <div class="page" id="message">
+            <div class="message-container">
+                <h2 class="message-title">To My Beautiful Rose 🌹<br>You are the sunshine of my life</h2>
+                <div class="message-content">
+                    <p class="message-text">
+                        Every morning when I wake up, the first thing I think about is you. 
+                        Your beautiful smile is like a ray of sunshine that brightens my entire day.
+                    </p>
+                    <p class="message-text">
+                        You are not just beautiful on the outside, but your heart is pure gold. 
+                        The way you care for others and spread joy wherever you go makes me fall in love with you more each day.
+                    </p>
+                    <p class="message-text">
+                        Like a precious rose, you bring beauty, fragrance, and happiness to my world. 
+                        I am so lucky to have someone as amazing as you in my life. 💕
+                    </p>
+                </div>
+                <button class="next-btn" onclick="showPhotos()">See More 💕</button>
+            </div>
+        </div>
+
+        <!-- Photos Page -->
+        <div class="page" id="photos">
+            <h2 class="photos-title">Our Beautiful Memories</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="a1.jpeg" alt="Beautiful Memory 1" class="photo">
+                    <p class="photo-caption">Cute + classy look 💕</p>
+                </div>
+                <div class="photo-item">
+                    <img src="a2.jpeg" alt="Beautiful Memory 2" class="photo">
+                    <p class="photo-caption">Special Moment ✨</p>
+                </div>
+                <div class="photo-item">
+                    <img src="a3.jpeg" alt="Beautiful Memory 3" class="photo">
+                    <p class="photo-caption">Together Forever 🌟</p>
+                </div>
+            </div>
+            <button class="next-btn" onclick="showSurprise()">Final Surprise 🎁</button>
+        </div>
+
+        <!-- Final Surprise -->
+        <div class="page" id="surprise">
+            <div class="surprise-container">
+                <h2 class="surprise-title">The Biggest Surprise</h2>
+                <div class="gift-box">
+                    <div class="gift-lid"></div>
+                    <div class="gift-body"></div>
+                </div>
+                <p class="surprise-text">Click the gift box to open your surprise!</p>
+                <div class="surprise-message" id="surpriseMessage" style="display: none;">
+                    <h3>🎉 Surprise! 🎉</h3>
+                    <p class="message-text">GOOD MORNING BEAUTIFUL !! Just a reminder that you are amazing . Just like these roses i am sending you ....... bring beauty and joy to everyone around you ....... and also ..... guess what !!!! only 28 days to go ...... Yes you heared it right ..... TWO EAIGHT ..... 💖 💖 💖 💖woooooooowwwwwww .....</p>
+                    <p class="love-note" id="countdownDisplay">✨ 28 DAYS TO GO ✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
