@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To My Eternal Love | A journey through love, memories, and endless devotion</title>
+  <meta name="description" content="A journey through love, memories, and endless devotion" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <div class="floating-elements">
+    <div class="floating-emoji">💕</div>
+    <div class="floating-emoji">🌹</div>
+    <div class="floating-emoji">✨</div>
+    <div class="floating-emoji">💖</div>
+    <div class="floating-emoji">🌸</div>
+  </div>
+
+  <audio id="bgMusic" src="P1.mp3" preload="auto"></audio>
+
+  <!-- Notification Popup -->
+  <div class="notification-popup" id="notificationPopup">
+    <div class="popup-content">
+      <div class="popup-icon">💝</div>
+      <div class="popup-text">
+        <h4 id="popupTitle">A Little Note</h4>
+        <p id="popupMessage">Something beautiful awaits you — scroll down to reveal it 💕</p>
+      </div>
+      <button class="popup-close" onclick="closeNotification()">×</button>
+    </div>
+  </div>
+
+  
+
+  <main id="mainContent">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="main-title">To My Eternal Love</h1>
+        <p class="subtitle">A journey through love, memories, and endless devotion</p>
+        <p class="scroll-text">Scroll to explore</p>
+        <div class="scroll-indicator">↓</div>
+      </div>
+    </section>
+
+    <section id="letter" class="love-letter">
+      <div class="container">
+        <h2 class="section-title">My Dearest Love</h2>
+        <div class="letter-content">
+          <p class="poetic-line">Teri nazron ki roshni se, mere andheron ko subah milti hai.</p>
+          
+          <p class="poetic-line">Teri muskurahat ke saaye mein, meri thakan bhi phool ban jaati hai.</p>
+          
+          <p class="poetic-line">Tu paas ho to waqt ruk kar, mere liye arzoo ban jaata hai.</p>
+          
+          <p class="poetic-line">Teri khamoshi tak mein bhi, pyaar ki mehakti awaaz sunai deti hai.</p>
+          
+          <p class="poetic-line">Tu meri duaon ka matlab hai, aur meri rooh ka sukoon.</p>
+
+          <div class="special-message">
+            <h3 class="message-title">💝 A Special Promise 💝</h3>
+            <div class="promise-content">
+              <p class="promise-line">Main tumhari muskaan hi nahi,<br>
+              tumhare aansoon bhi pocha karunga —<br>
+              aur har lamhe mein tumhe apna saaya ban kar sambhalunga.</p>
+            </div>
+          </div>
+
+          
+          
+          <p class="signature">With all my love,<br>
+          <span class="signature-name">Your forever admirer</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="memories">
+      <div class="container">
+        <h2 class="section-title">Our Beautiful Memories</h2>
+        <div class="memories-grid">
+           <div class="memory-card">
+             <div class="memory-image">
+              <img src="P2.jpeg" alt="Beautiful Memory 1" loading="lazy" />
+             </div>
+             <div class="memory-content">
+               <h3>Beautiful Memory 1</h3>
+               <p>Cute + Classy Look</p>
+               <div class="memory-emoji">💕</div>
+             </div>
+           </div>
+           <div class="memory-card">
+             <div class="memory-image">
+              <img src="P3.jpeg" alt="Beautiful Memory 2" loading="lazy" />
+             </div>
+             <div class="memory-content">
+               <h3>Beautiful Memory 2</h3>
+               <p>Special Moment</p>
+               <div class="memory-emoji">✨</div>
+             </div>
+           </div>
+           <div class="memory-card">
+             <div class="memory-image">
+              <img src="P4.jpeg" alt="Beautiful Memory 3" loading="lazy" />
+             </div>
+             <div class="memory-content">
+               <h3>Beautiful Memory 3</h3>
+               <p>Together Forever</p>
+               <div class="memory-emoji">🌟</div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="countdown-section">
+      <div class="container">
+        <h2 class="section-title">The Big Day is Coming!</h2>
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">28</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+        <p class="countdown-text">Every second brings us closer to our special moment together</p>
+      </div>
+    </section>
+
+    <section id="surprise" class="surprise-section">
+      <div class="container">
+        <h2 class="section-title">Your Special Surprise</h2>
+        <p class="surprise-text">Click the gift to reveal your surprise!</p>
+        <div class="gift-container" onclick="revealSurprise()">
+          <div class="gift-box">
+            <div class="gift-bow">🎁</div>
+          </div>
+        </div>
+        <div class="surprise-content" id="surpriseContent" style="display: none;">
+          <h3>🎉 A Little Surprise 🎉</h3>
+          <div class="surprise-message">
+            <p>💫 DAY 13 – Bright Horizons 💫<br>
+            Good morning, stargazer.<br>
+            You’re the quiet sparkle before the day bursts open.<br>
+            Every step you take today feels like a wish fulfilled ✨</p>
+            <p>13 mornings left 🌠</p>
+            <button class="celebrate-btn" onclick="celebrateAgain()">Celebrate Again ✨</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>PRANZZZ ❤ just for you.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
